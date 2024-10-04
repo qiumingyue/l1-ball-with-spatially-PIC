@@ -11,7 +11,11 @@ The code in this folder is used to implement parameter estimation and variable s
 
 ### Files
 ```l1-geo-functions.jl``` includes all functions created from the model: spline, sampler, likelihood functions and MCMC algorithms, etc. 
+
+
 ```l1-geo-mainfunctions.jl``` includes the function to estimate parameter and variable selection.
+
+
 ```analysis.jl``` includes some hyper-parameters settings and instructions on how to run the code.
 
 ## Folder l1-lattice:
@@ -21,5 +25,9 @@ The code in this folder is used to implement parameter estimation and variable s
 
 ### Files
 ```l1-lattice-functions.jl``` includes all functions created from the model: spline, sampler, likelihood functions and MCMC algorithms, etc. 
+
+
 ```l1-lattice-mainfunctions.jl``` includes the function to estimate parameter and variable selection.
+
+
 ```analysis.jl``` includes some hyper-parameters settings and instructions on how to run the code.
