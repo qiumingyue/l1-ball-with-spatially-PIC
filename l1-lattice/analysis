@@ -12,7 +12,7 @@ rho = 0.5
 phitau = 1
 fun(t) = 0.2*t[1]^2
 
-W = Matrix(CSV.read("D:matrix of data_tooth-53-54-55.csv",DataFrame,header=0))
+W = Matrix(CSV.read("matrix of data_tooth-53-54-55.csv",DataFrame,header=0))
 
 exact_rate = 0.1
 
