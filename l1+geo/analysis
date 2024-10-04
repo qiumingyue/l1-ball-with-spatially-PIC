@@ -4,14 +4,10 @@ using Random, Distributions, Plots, NLsolve, LinearAlgebra, StatsPlots, MCMCChai
 seed = 55
 rho = 0.5
 
-logR = zeros(28,28)
-logR = [abs(i-j) for i=1:28,j=1:28] 
-logR[15:28,1:14] .= 100000
-logR[1:14,15:28] .= 100000
-for i in 1:14
-    logR[i,(28-i+1)] = 1
-    logR[(28-i+1),i] = 1
-end
+include("l1-geo-functions.jl")
+include("l1-geo-mainfunction.jl")
+logR = Matrix(CSV.read("distance_tooth.csv",DataFrame,header=0))
+
 
 exact_rate = 0.1
 
